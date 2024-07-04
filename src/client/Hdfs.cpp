@@ -857,7 +857,7 @@ tSize hdfsPread(hdfsFS fs, hdfsFile file, void * buffer, tSize length, tOffset p
         SetLastException(Hdfs::current_exception());
         handleException(Hdfs::current_exception());
     }
-
+    std::cout << "[BZL] error is : " << err;
     return -1;
 }
 
